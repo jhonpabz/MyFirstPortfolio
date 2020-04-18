@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jhon Cesar Pablo - Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- LESS SCSS -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
+      <!-- -------Navigation bar onscroll Shrink----- -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(function() {
+          $(document).scroll(function() {
+            var $nav = $(".fixed-top");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          });
+        });
+      </script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="300">
+    <div id="home"> 
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+        <img class="logo-2" src="images/logo-scrolled.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" data-interval="7000">
+        
+            <ol class="carousel-indicators">
+              
+            </ol>
+            <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox">
+        
+        <div
+          class="carousel-item-masthead"
+          style="background-image: url(images/masthead.jpg);"
+        >
+          <div id="carousel1" class="carousel-caption text-center">
+              <canvas id="demo-canvas"></canvas>
+				<h1 class="masthead-text">Hello! I'm <strong class="textblue"><span class="text-focus-in">Jhon Cesar Pablo</span> </strong></h1>
+				<h3 class="text-flicker-in-glow">A Front-end developer.</h3>
+				<a id="scale-in-ver-bottom" class="btn btn-outline-light btn-lg" href="#about" > Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- --------------ABOUT ME SECTION---------------------- -->
+      
+            <div id="about"  class="container offset">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="section-title" data-aos="fade-up"
+                        data-aos-offset="200" >About Me</h1>
+                        <p class="section-paragraph" data-aos="fade-up"
+                        data-aos-offset="250" data-aos-duration="1000"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 circle-bg">
+                                                <!-- Start of Image Slider -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000" data-aos="fade-right"
+                        data-aos-offset="300" data-aos-duration="1100">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    
+                                    
+                            
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide 1 -->
+                                    <div id="carousel1" class="carousel-caption text-center"> 
+                                    </div>
+                                    <div id="kenburns-top" class="carousel-item active">
+                                        <img  style="width:100%;height:auto" src="images/about/jhon.png" alt="">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div id="kenburns-top" class="carousel-item">
+                                                <img style="width:100%;height:auto" src="images/about/1.jpg" alt="">
+                                    </div>
+                            
+                                    <!-- Slide 3 -->
+                                    <div id="kenburns-top" class="carousel-item">
+                                                <img style="width:100%;height:auto" src="images/about/2.jpg" alt="">
+                                    </div>
+
+                                </div> <!-- End of Carouser Inner -->
+                                <!-- Next and Prev Buttons-->
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" style="z-index: 99" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" style="z-index: 99" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                                
+                            </div>	
+                            
+                                <!-- End of Image Slider -->
+                    </div>
+                    <div class="col-md-6">
+                        <h3  data-interval="7000" data-aos="fade-left"
+                        data-aos-offset="200" data-aos-duration="1500">Who I am?</h3>
+                        <p class="about-p"  data-interval="7000" data-aos="fade-up"
+                        data-aos-offset="200" data-aos-duration="1500">I'm Jhon Cesar Pablo a Web Designer/Front-end Developer. Coding is my passion, I love problem-solving and learning new things. I enjoy creating/coding website especially when I see the outcome of my work and I feel overwhelmed when someone appreciates it.</p>
+                            <p class="about-p-2"  data-interval="7000" data-aos="fade-up"
+                            data-aos-offset="180" data-aos-duration="1500">• HTML5 &nbsp; • CSS3 &nbsp; • Javascript &nbsp; • jQuery &nbsp; • PHP &nbsp; • MySql &nbsp; • Adobe Photoshop &nbsp; • Web & Mobile Responsive Design &nbsp; • Git &nbsp; • Github</p>
+                            <p   data-interval="7000" data-aos="fade-up"
+                            data-aos-offset="180" data-aos-duration="1500"><a href="images/download/jhon-resume.pdf" target="_blank" class="btn btn-outline-light btn-lg about-btn" download>Download CV</a></p>
+                    </div>
+                </div>
+            </div>
+<!-- --------------END OF ABOUT SECTION---------------------- -->    
+
+<!-- --------------PORTFOLIO SECTION---------------------- -->    
+      <div id="portfolio" class="container offset">
+        <section class="gallery-block cards-gallery">
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <h1  class="section-title" data-aos="fade-up"
+                data-aos-offset="200" >Portfolio</h1>
+                <p  class="section-paragraph" data-aos="fade-up"
+                data-aos-offset="250" data-aos-duration="1000"></p>
+               
+            </div>
+          </div>
+         
+          <div class="row justify-content-center mb-5"  data-interval="7000" data-aos="fade-up"
+          data-aos-offset="250" data-aos-duration="1200">
+              <div id="filters" class="filters text-center button-group col-md-7">
+                <button class="btn btn-primary active" data-filter="*">All</button>
+                <button class="btn btn-primary" data-filter=".my">My Project</button>
+                <button class="btn btn-primary" data-filter=".office">Office Project</button>
+                <button class="btn btn-primary" data-filter=".school">School Project</button>
+              </div>
+            </div>  
+          <div id="posts" class="row">
+            <div class="col-md-6 col-lg-4 my item">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="https://jhoncesarpablo.netlify.app/" target="_blank">
+                    <img src="images/projects/jhon.JPG" alt="Card Image" class="card-img-top">
+                  </a>
+                    <div class="card-body">
+                        <h6><a href="https://jhoncesarpablo.netlify.app/" target="_blank">My First Portfolio Website</a></h6>
+                        <p class="text-muted card-text">I created this website to showcase my skill as a fresh graduate of BSIT. I use the Bootstrap framework, CCS3 Keyframes animation, parallax effect, and Javascript.</p>
+                        <a href="https://github.com/jhonpabz/jhonpabz.github.io" target="_blank" class="card__github">
+                            GitHub
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my  item" >
+                <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="#" >
+                    <img src="images/projects/jhon-2.JPG" alt="Card Image" class="card-img-top">
+                  </a>
+                    <div class="card-body">
+                        <h6><a href="#">My New Portfolio Website</a></h6>
+                        <p class="text-muted card-text">I created this new portfolio website to showcase what I learned and created in past few months. I used (AOS) Animate  on Scroll, Portfolio filtering, Bootstrap, CSS, and  Javascript/jQuery.</p>
+                        <a href="#" target="_blank" class="card__github">
+                            GitHub
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 office item" >
+              <div class="card border-0 transform-on-hover">
+                <a class="lightbox" href="https://arkvisionph.com/"  target="_blank">
+                  <img src="images/projects/ark-vision.JPG" alt="Card Image" class="card-img-top">
+                </a>
+                  <div class="card-body">
+                      <h6><a href="https://arkvisionph.com/"  target="_blank">Ark Vision Philippines Corporation</a></h6>
+                      <p class="text-muted card-text">My first premium/multiple page project I created as a Web Designer at DPC. I used our company's CMS, HTML5, CSS3, and jQuery.</p>
+                      
+                    </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 office item" >
+            <div class="card border-0 transform-on-hover">
+              <a class="lightbox" href="https://tigerbilt.com.ph/"  target="_blank">
+                <img src="images/projects/rold.JPG" alt="Card Image" class="card-img-top">
+              </a>
+                <div class="card-body">
+                    <h6><a href="https://tigerbilt.com.ph/"  target="_blank">Tigerbilt Enterprise</a></h6>
+                    <p class="text-muted card-text">Premium/multipage package website. The client sends a peg/sample website to replicate and I used CSS3 keyframes and jQuery for animation/effects. </p>
+                    
+                  </div>
+            </div>
+        </div>
+            <div class="col-md-6 col-lg-4 office item">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="https://fiver.powersites.ph/"  target="_blank">
+                    <img src="images/projects/fiver.JPG" alt="Card Image" class="card-img-top">
+                  </a>
+                    <div class="card-body">
+                        <h6><a href="https://fiver.powersites.ph/"  target="_blank">Five R Marble & Pebbles Supply</a></h6>
+                        <p class="text-muted card-text">I created this Powersite Mock-up using DPC's CMS(Websplanet Platform). I use HTML, CSS, and sometimes Javascript to customize the website.</p>
+                      </div>
+                </div>
+            </div>
+
+            <div id="posts" class="row">
+                <div class="col-md-6 col-lg-4 office item" >
+                    <div class="card border-0 transform-on-hover">
+                      <a class="lightbox" href="https://handd.powersites.ph/"  target="_blank">
+                        <img src="images/projects/handd.JPG" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="https://handd.powersites.ph/"  target="_blank">H&D Property Management Team</a></h6>
+                            <p class="text-muted card-text">I created this Powersite Mock-up using DPC's CMS(Websplanet Platform). I use HTML, CSS, and sometimes Javascript to customize the website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="posts" class="row">
+                  <div class="col-md-6 col-lg-4 school item" >
+                      <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="https://jhoncesarpablo.netlify.app/thesis.html"  target="_blank">
+                          <img src="images/projects/ucc.PNG" alt="Card Image" class="card-img-top">
+                        </a>
+                          <div class="card-body">
+                              <h6><a href="https://handd.powersites.ph/"  target="_blank">Project Study</a></h6>
+                              <p class="text-muted card-text">Back in my college day, I've always chosen as a leader/programmer in every major subject in our class. I built this Point of Sale and Inventory Management System using PHP, MySql, and Javascript.</p>
+                          </div>
+                      </div>
+                  </div>
+                
+                
+                
+          </section>
+      </div>
+<!-- --------------END OF PORTFOLIO SECTION---------------------- -->  
+      <br> <br> <br>
+      <div id="contact" class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>About Me</h2>
+              <p class="pr-5 text-white-50">I'm Jhon Cesar Pablo a Front-end Developer.</p>
+              <p class="footer-icon"><a href="https://github.com/jhonpabz" target="_blank"><i class="fa fa-github"></i></a><a href="https://web.facebook.com/jhoncesarpablo" target="_blank"><i class="fa fa-facebook-square mr-1"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="footer-links">
+                  <li>- <a href="#home">Home</a></li>
+                  <li>- <a href="#about">About</a></li>
+                  <li>- <a href="#portfolio">Portfolio</a></li>
+                  <li>- <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+              <p class="mb-0"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>Gate 3 Fort Bonifacio, Taguig City</p>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>+63 (909) 0225-288</p>
+              <p><i class="fa fa-envelope-o mr-3"></i>jhncsrpbl@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="row mt-5">
+            <div class="col copyright">
+                <hr>
+              <p class=""><small class="text-white-50">© 2020 JHON CESAR PABLO</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- -------Portfolio filter----- -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+
+<!-- -------Animate On Scroll----- -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+  </body>
+</html>
