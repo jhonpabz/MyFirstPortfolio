@@ -409,7 +409,20 @@ hr {
     display: block;
   }
   #about h3,
-  #about p {
+  #about p,
+  .about-btn.btn-lg {
     text-align: center;
+    margin-left: 0;
+  }
+  .footer {
+    text-align: center;
+  }
+  .pr-5,
+  .px-5 {
+    padding-right: 0 !important;
+    margin-bottom: 0;
+  }
+  .container {
+    padding: 5% 5%;
   }
 }
