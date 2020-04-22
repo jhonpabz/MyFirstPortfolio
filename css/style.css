@@ -327,10 +327,17 @@ a.card__github:hover {
   margin-bottom: 10px;
 }
 .footer-icon {
-  font-size: 32px;
+  font-size: 32px !important;
 }
 .footer-icon a {
   margin-right: 10px;
+}
+.about-footer i.fa {
+  font-size: 34px;
+}
+
+.mt-5 {
+  margin-top: 0rem !important;
 }
 hr {
   margin-top: 1rem;
