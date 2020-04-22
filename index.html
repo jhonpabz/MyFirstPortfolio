@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
 
     <!-- LESS SCSS -->
@@ -265,16 +266,13 @@
                               <p class="text-muted card-text">Back in my college day, I've always chosen as a leader/programmer in every major subject in our class. I built this Point of Sale and Inventory Management System using PHP, MySql, and Javascript.</p>
                           </div>
                       </div>
-                  </div>
-                
-                
-                
+                  </div>    
           </section>
       </div>
+<!-- --------------END OF PORTFOLIO SECTION---------------------- -->  
 
 
-
-      <div id="contact"  class="container offset">
+      <!-- <div id="contact"  class="container offset">
           <section class="gallery-block cards-gallery">
             <div class="row">
               <div class="col-md-12 text-center">
@@ -299,9 +297,70 @@
             </div>
 
           </section>
-      </div>
-<!-- --------------END OF PORTFOLIO SECTION---------------------- -->  
+      </div> -->
 
+<!-- -------------------------------CONTACT FORM------------------------------------ -->
+      <div id="contact" class="container-contact100">
+          <div class="wrap-contact100">
+            <form class="contact100-form validate-form"  id="contact-form" action="POST" method="post" data-netlify="true">
+              <span class="contact100-form-title">
+                Send Us A Message
+              </span>
+
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Please enter your name"
+              >
+                <input
+                  class="input100"
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                />
+                <span class="focus-input100"></span>
+              </div>
+
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Please enter your email: e@a.x"
+              >
+                <input
+                  class="input100"
+                  type="text"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <span class="focus-input100"></span>
+              </div>
+
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Please enter your message"
+              >
+                <textarea
+                  class="input100"
+                  name="message"
+                  placeholder="Your Message"
+                ></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <div class="field">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+              <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                  <span>
+                    <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                    Send
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      <!-- ---------------------------------FOOTER--------------------- -->
       <div class="mt-5 pt-5 pb-5 footer">
         <div class="container">
           <div class="row">
