@@ -154,10 +154,11 @@ body {
   color: rgb(150, 148, 148);
 }
 .about-p-2 {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 40px;
   font-family: "Poppins", sans-serif;
   color: #007bff;
+  font-size: 15px;
 }
 #kenburns-top {
   -webkit-animation: kenburns-top 5s ease-out both;
